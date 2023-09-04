@@ -28,7 +28,7 @@ describe('Verify Text Box', () => {
         const submit = await $('#submit');
         await submit.click();
 
-        browser.pause(10000);
+        browser.pause(60000);
     });
 
     
