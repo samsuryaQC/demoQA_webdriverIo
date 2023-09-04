@@ -1,4 +1,7 @@
 exports.config = {
+    // user: process.env.LT_USERNAME || 'samsurya90',
+    // key: process.env.LT_ACCESS_KEY || 'vYQHZl7f53zmd17UYsPmc5FUxeA91jatldK3yZQWFFWOpqs9f2',
+    // logFile : './logDir/api.log',
     //
     // ====================
     // Runner Configuration
@@ -51,7 +54,8 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'chrome',
+        build : 'Demo_QA_Web',
     }],
 
     //
@@ -101,7 +105,22 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: [],
+    // services: [
+    //     [
+    //         "lambdatest",
+    //         {
+    //         tunnel: true,
+    //         app_upload: true, 
+    //         // app:{
+    //         // // app_name : "prohache", //provide your desired app name
+    //         // // app_path : "E:/2023/WebdriverIO/Prohache_web/lambda-results", //provide the local app location
+    //         // // // //     // or
+    //         // // // //     app_url : "https://example.test_android.apk", //provide the url where your app is horsted or stored
+    //         // // // //     custom_id : "12345", //provide your desired custom id
+    //         // enableCapability : true
+    //         //  }
+    //     }]
+    // ],
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
