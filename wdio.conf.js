@@ -55,7 +55,7 @@ exports.config = {
     //
     capabilities: [{
         browserName: 'chrome',
-        build : 'Demo_QA_Web',
+        //build : 'Demo_QA_Web',
     }],
 
     //
