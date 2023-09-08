@@ -27,6 +27,16 @@ exports.config = {
     specs: [
         './test/specs/**/*.js'
     ],
+    suites: {
+        element: [
+            './test/specs/ts_element/alert.spec.js',
+            './test/specs/ts_element/buttons.spec.js',
+            './test/specs/ts_element/checkbox.spec.js'
+        // ],
+        // otherFeature: [
+        //     // ...
+        ]
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'

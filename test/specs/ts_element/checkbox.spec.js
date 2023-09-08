@@ -10,9 +10,10 @@ describe('CheckBox Menu', () => {
         
         await cbDesktop.click();
 
+        await browser.pause(7000);
+
         const result= await $('#result');
         await expect(result).toHaveTextContaining('desktop');
-        return checkbox();
 
     });
     
