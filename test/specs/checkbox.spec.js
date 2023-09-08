@@ -12,6 +12,7 @@ describe('CheckBox Menu', () => {
 
         const result= await $('#result');
         await expect(result).toHaveTextContaining('desktop');
+        return checkbox();
 
     });
     
